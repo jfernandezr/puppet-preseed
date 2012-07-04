@@ -1,0 +1,10 @@
+name 'jfernandezr-preseed'
+version '0.1.0'
+source 'git://github.com/jfernandezr/puppet-preseed.git'
+author 'Juan Fernandez-Rebollos'
+summary 'Puppet APT preseed module'
+description 'APT package installation and configuration using debconf preseeding and copying static configuration files'
+project_page 'http://github.com/jfernandezr/puppet-preseed'
+license 'GPL v3'
+
+dependency 'puppetlabs/stdlib', '>= 2.3.3'
