@@ -4,7 +4,6 @@ Puppet Preseed Module
 The Puppet Preseed module, `puppet-preseed`, helps APT package installation
 using debconf preseeding and copying static configuration files.
 
-
 Quick usage example
 -------------------
 
@@ -28,8 +27,11 @@ Initializing the client
 
 The `preseed::setup` class initializes the client by creating a working
 directory where to store the preseeding files. It uses the default
-`${::puppet_vardir}/preseed` location. Currently there is no need to
-instantiate the class.
+`${::puppet_vardir}/preseed` location.
+
+The class accepts the following parameters:
+
+* preseed_dir: client directory where to hold the preseeding files
 
 
 Installing a package
