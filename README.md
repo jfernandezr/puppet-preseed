@@ -27,10 +27,9 @@ Initializing the client
 -----------------------
 
 The `preseed::setup` class initializes the client by creating a working
-directory where to store the preseeding files.
-
-It uses the default "${::puppet_vardir}/preseed" location. Currently there
-is no need to instantiate the class.
+directory where to store the preseeding files. It uses the default
+`${::puppet_vardir}/preseed` location. Currently there is no need to
+instantiate the class.
 
 
 Installing a package
@@ -101,7 +100,7 @@ as many times as needed. As with preseeding, it will look in the Puppet Master t
 recursively the config files from there.
 
 The permissions applied to the copied files are the ones set by the package installation,
-or if the file did not previously existed, "root.root rw-r--r--"
+or if the file did not previously existed, `root.root rw-r--r--`
 
 The default locations are under the `${::fqdn}/config/${package}` directory and then the
 `config/${package}` directory.
