@@ -4,8 +4,8 @@
 #
 define preseed::package ($ensure = present, $content = undef, $source = undef) {
   
-  # Make sure the preseed setup module is initialized
-  require preseed::setup
+  # Make sure the preseed module is initialized
+  require preseed
   
   # Put the preseeding file in the preseeding directory
   if ($content != undef) {
@@ -17,7 +17,7 @@ define preseed::package ($ensure = present, $content = undef, $source = undef) {
       group   => 'root',
       mode    => '0640',
       content => $content,
-      require => File[$preseed::params::basedir],
+      require => File[$preseed::setup::basedir],
     }
     
   } else {

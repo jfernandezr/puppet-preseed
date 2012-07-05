@@ -2,7 +2,8 @@ Puppet Preseed Module
 =====================
 
 The Puppet Preseed module, `puppet-preseed`, helps APT package installation
-using debconf preseeding and copying static configuration files.
+using debconf preseeding and copying static configuration files. The code
+has been tested on Ubuntu Server 12.04 64bit.
 
 Quick usage example
 -------------------
