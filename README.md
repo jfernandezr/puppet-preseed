@@ -132,8 +132,8 @@ The `service` parameter allows to notify the service about modifications in the 
 files.
 
 
-Known Issues:
--------------
+Known Issues
+------------
 
 * No uninstallation of packages yet
 * Better file permission handling of the config files, maybe use of exclude patterns
